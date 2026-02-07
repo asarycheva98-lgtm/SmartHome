@@ -1,5 +1,3 @@
-package device
-
 abstract class SmartDevice(
     val name: String,
     var isOn: Boolean

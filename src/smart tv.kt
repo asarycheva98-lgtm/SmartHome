@@ -1,5 +1,3 @@
-package device
-
 class SmartTV(
     name: String,
     isOn: Boolean = false
@@ -11,7 +9,6 @@ class SmartTV(
         }
         isOn = true
         println("Устройство \"$name\" включен")
-
     }
 
     override fun turnOff() {
@@ -21,6 +18,5 @@ class SmartTV(
         }
         isOn = false
         println("Устройство \"$name\" выключено")
-
     }
 }

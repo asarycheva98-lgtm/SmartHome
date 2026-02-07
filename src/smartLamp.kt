@@ -1,5 +1,3 @@
-package device
-
 class SmartLamp(
     name: String,
     isOn: Boolean = false

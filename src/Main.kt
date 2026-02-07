@@ -1,16 +1,13 @@
-import device.SmartDevice
-import device.SmartLamp
-import device.SmartTV
-import device.SmartAirConditioner
+import SmartDevice
+import SmartLamp
+import SmartTV
+import SmartAirConditioner
 
 fun main() {
     val device = listOf<SmartDevice>(
-        SmartLamp(
-            "Ночник Геннадий"),
-        SmartTV(
-            "Телевизор Антон"),
-        SmartAirConditioner(
-            "Кондиционер Евгений", temperature = 25)
+        SmartLamp("Ночник Геннадий"),
+        SmartTV("Телевизор Антон"),
+        SmartAirConditioner("Кондиционер Евгений", temperature = 25)
     )
     device.forEach { controlDevice(it) }
 }
@@ -20,5 +17,4 @@ fun controlDevice(device: SmartDevice) {
     device.status()
     device.turnOff()
     device.status()
-
 }

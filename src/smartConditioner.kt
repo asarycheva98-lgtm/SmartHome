@@ -1,5 +1,3 @@
-package device
-
 class SmartAirConditioner(
     name: String,
     isOn: Boolean = false,
