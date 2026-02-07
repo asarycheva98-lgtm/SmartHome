@@ -1,4 +1,4 @@
-package device
+
 
 class SmartLamp(
     name: String,

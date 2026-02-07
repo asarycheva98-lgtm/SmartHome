@@ -1,7 +1,7 @@
-import device.SmartDevice
-import device.SmartLamp
-import device.SmartTV
-import device.SmartAirConditioner
+import SmartDevice
+import SmartLamp
+import SmartTV
+import SmartAirConditioner
 
 fun main() {
     val device = listOf<SmartDevice>(
@@ -20,5 +20,4 @@ fun controlDevice(device: SmartDevice) {
     device.status()
     device.turnOff()
     device.status()
-
 }

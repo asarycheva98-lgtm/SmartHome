@@ -1,4 +1,4 @@
-package device
+
 
 class SmartAirConditioner(
     name: String,
