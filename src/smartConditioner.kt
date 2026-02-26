@@ -5,21 +5,21 @@ class SmartAirConditioner(
 ) : SmartDevice(name, isOn) {
     override fun turnOn() {
         if (isOn) {
-            println("Устройство \"$name\" уже включен")
+            println("Устройство $name уже включен")
             return
         }
         isOn = true
-        println("Устройство \"$name\" включен, температура: $temperature")
+        println("Устройство $name включен, температура: $temperature")
 
     }
 
     override fun turnOff() {
         if (!isOn) {
-            println("Устройство \"$name\" уже выключено")
+            println("Устройство $name уже выключено")
             return
         }
         isOn = false
-        println("Устройство \"$name\" выключено")
+        println("Устройство $name выключено")
 
     }
 }

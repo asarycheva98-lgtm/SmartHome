@@ -6,7 +6,7 @@ abstract class SmartDevice(
     abstract fun turnOff()
 
     fun status() {
-        println("Устройство: \"$name\" | Включено: \"$isOn\"")
+        println("Устройство: $name | Включено: $isOn")
     }
 
 }

@@ -4,19 +4,19 @@ class SmartTV(
 ) : SmartDevice(name, isOn) {
     override fun turnOn() {
         if (isOn) {
-            println("Устройство \"$name\" уже включено")
+            println("Устройство $name уже включено")
             return
         }
         isOn = true
-        println("Устройство \"$name\" включен")
+        println("Устройство $name включен")
     }
 
     override fun turnOff() {
         if (!isOn) {
-            println("Устройство \"$name\" уже выключено")
+            println("Устройство $name уже выключено")
             return
         }
         isOn = false
-        println("Устройство \"$name\" выключено")
+        println("Устройство $name выключено")
     }
 }
